@@ -97,7 +97,7 @@ proxies:
 
 proxy-groups:
   - {name: 一键连,        <<: *SelectFB, include-all: true, icon: https://raw.githubusercontent.com/666OS/YYDS/main/mihomo/image/mihomo.png}
-  - {name: 故障转移,      <<: *FallBack, proxies: [香港自动, 台湾自动, 新加坡自动, 日本自动, 韩国自动, 美国自动, 欧洲自动], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
+  - {name: 故障转移,      <<: *FallBack, proxies: [美国自动, 欧洲自动, 新加坡自动, 日本自动, 韩国自动, 台湾自动, 香港自动], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
   - {name: 抖快书定位,     type: select, proxies: [直连, 香港自动, 台湾自动, 新加坡自动, 日本自动, 韩国自动, 美国自动, 欧洲自动], icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ip.png}
   - {name: AI平台,        <<: *SelectSG, include-all: true, icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png}
   - {name: Speedtest,    type: select, include-all: true, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png}  
