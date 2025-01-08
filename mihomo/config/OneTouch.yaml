@@ -78,19 +78,27 @@ dns:
     - +.local
     - time.*.com
     - ntp.*.com
-    - rule-set:cn_domain
     - +.market.xiaomi.com
-    - +.googlevideo.comn
+    - +.googlevideo.com
     - +.push.apple.com
+  direct-nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
   default-nameserver:
-    - 119.29.29.29
-    - 180.184.1.1
-    - 223.5.5.5
+    - 'https://223.6.6.6/dns-query'
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - 'https://1.1.1.1/dns-query'
+    - 'https://8.8.8.8/dns-query'
+  proxy-server-nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
   nameserver-policy:
-    '+.googlevideo.com': https://dns64.dns.google/dns-query
+    'rule-set:cn_domain':
+      - direct-nameserver
+    'rule-set:private_domain':
+      - direct-nameserver
+
+
 
 proxies:
   - {name: 直连, type: direct, udp: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Direct.png}
